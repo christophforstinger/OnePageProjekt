@@ -1,0 +1,327 @@
+
+/* Globale Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+      margin: 0;
+      font-family: 'Jost', sans-serif;
+  }
+  
+  header {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 50px;
+  }
+  
+  nav {
+      background-color: #222;
+      padding: 10px;
+  }
+  
+  nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+  }
+  
+  nav ul li {
+      margin: 0 10px;
+  }
+  
+  nav ul li a {
+      color: #ccc;
+      text-decoration: none;
+      padding: 10px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+      background-color: #c0392b;
+      color: #fff;
+  }
+  
+  
+  .slider {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+  }
+  
+  .slider input[type=radio] {
+    display: none;
+  }
+  
+  .slider .slides {
+    display: flex;
+    height: 100%;
+    width: 300%;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .slider .slider-image {
+    width: 33.33%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    float: left;
+    border-radius: 15px;
+  }
+  
+  #slide1-img {
+    background-image: url(FooTecLogo.jpg);
+  }
+  
+  #slide2-img {
+    background-image: url();
+  }
+  
+  #slide3-img {
+    background-image: url();
+  }
+  
+  .slider input[type=radio]:checked + .slider .slides {
+    transform: translateX(-33.33%);
+  }
+  
+  .slider .slider-navigation {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+  }
+  
+  .slider .slider-navigation label {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ccc;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .slider .slider-navigation label:hover {
+    background-color: #999;
+  }
+  
+  .slider input[type=radio]:checked + .slider .slider-navigation label {
+    background-color: #333;
+  }
+  
+  section {
+      background-color: #777474;
+      padding: 50px;
+  }
+  
+  section h2 {
+      color: #c0392b;
+  }
+  
+  section p {
+      color: #333;
+  
+  }
+  
+  footer {
+      background-color: #2d2d2d;
+      color: #fff;
+      padding: 30px 50px;
+    }
+    
+    footer h4 {
+      font-size: 24px;
+      font-weight: 700;
+      margin-bottom: 20px;
+      margin-top: 20px;
+      margin-left: 5px;
+    }
+    
+    footer p {
+      font-size: 16px;
+      line-height: 24px;
+      margin-bottom: 10px;
+    }
+    
+    footer input[type="text"],
+    footer input[type="email"],
+    footer textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: none;
+      border-radius: 4px;
+    }
+    
+    footer button[type="submit"] {
+      background-color: #f00;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+   
+    
+  
+  
+  /* Burger-Icon */
+  .burger-icon {
+    display: none;
+    cursor: pointer;
+    padding: 10px;
+    position: relative;
+    z-index: 10;
+  }
+  
+  .bar {
+    width: 30px;
+    height: 3px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  
+  
+  /* Mobile styles */
+  @media only screen and (max-width: 767px) {
+      /* Header styles */
+      header {
+        padding: 10px;
+      }
+    
+      header img {
+        height: 40px;
+      }
+    
+      nav ul {
+        list-style: circle;
+        top: 55px;
+      }
+    
+      nav ul li {
+        border-top: none;
+        border-bottom: 1px solid #444;
+      }
+    
+      nav ul li a {
+        padding: 15px;
+      }
+  
+      /* Slider styles */
+      .slider {
+        height: 200px;
+      }
+    
+      /* Section styles */
+      section h2 {
+        font-size: 24px;
+      }
+    
+      section p {
+        font-size: 16px;
+      }
+    
+      section ul {
+        font-size: 16px;
+      }
+    
+      /* Footer styles */
+      footer {
+        padding: 20px 0;
+      }
+    
+      footer p {
+        font-size: 12px;
+      }
+      }
+    
+      footer .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+      }
+    
+      footer .col-md-6 {
+        width: 48%;
+      }
+    
+      footer .col-md-6:last-of-type {
+        margin-left: 4%;
+      }
+    
+  
+    /* Tablet styles */
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+      /* Header styles */
+      header {
+        padding: 15px;
+      }
+    
+      header img {
+        height: 45px;
+      }
+    
+      nav ul {
+        top: 55px;
+      }
+    
+      nav ul li {
+        border-top: none;
+        border-bottom: 1px solid #444;
+      }
+    
+      nav ul li a {
+        padding: 15px;
+      }
+    
+      /* Slider styles */
+      .slider {
+        height: 300px;
+      }
+    
+      /* Section styles */
+      section h2 {
+        font-size: 28px;
+      }
+    
+      section p {
+        font-size: 16px;
+      }
+    
+      section ul {
+        font-size: 16px;
+      }
+    
+      /* Footer styles */
+     
+      footer {
+          padding: 30px 0;
+        }
+      
+        footer .container {
+          flex-wrap: wrap;
+        }
+      
+        footer .col-md-6 {
+          width: 100%;
+          margin-bottom: 30px;
+        }
+      
+        footer .col-md-6:last-of-type {
+          margin-left: 0;
+        }
+    }
+    
