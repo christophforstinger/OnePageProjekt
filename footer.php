@@ -24,6 +24,7 @@
       </div>
     </div>
   </footer>
+  <a id="back-btn" href="#">  &#128285  </a>
 <?php wp_footer(); ?>
 </body>
 
