@@ -4,8 +4,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+   
   }
   
+ 
+
   body {
       margin: 0;
       font-family: 'Jost', sans-serif;
@@ -77,15 +80,15 @@
   }
   
   #slide1-img {
-    background-image: url(FooTecLogo.jpg);
+    background-image: url(images/Schwarz\ und\ Weiß\ Linien\ Architektur\ Logo\ \(1\).jpg);
   }
   
   #slide2-img {
-    background-image: url();
+    background-image: url(images/post.png);
   }
   
   #slide3-img {
-    background-image: url();
+    background-image: url(images/webdesign.png);
   }
   
   .slider input[type=radio]:checked + .slider .slides {
@@ -174,24 +177,42 @@
     }
    
     
-  
-  
-  /* Burger-Icon */
-  .burger-icon {
-    display: none;
-    cursor: pointer;
-    padding: 10px;
-    position: relative;
-    z-index: 10;
-  }
-  
-  .bar {
-    width: 30px;
-    height: 3px;
-    background-color: #333;
-    margin: 6px 0;
-    transition: 0.4s;
-  }
+    html {
+        scroll-behavior: smooth;
+        }
+       
+       
+      
+      
+      /*Back to Top Button*/
+      
+      
+      #back-btn{
+          display: inline-block;
+          line-height: 50px;
+          height: 50px;
+          font-size: 25px;
+          background-color: #f00;
+          color: #f3d9bd;
+          text-decoration: none;
+          border-top: 1px solid #f00;
+          border-bottom: 1px solid #f00;
+          border-left: 1px solid #f00;
+          border-right: 1px solid #f00;
+          border-radius: 20px;
+          padding: 0 .3rem;
+          position: fixed;
+          left: 87%;
+          bottom: 1rem;
+          z-index: 789;
+      }
+      
+      
+      #back-btn:hover {
+          
+        background-color: #777474;
+        transition: 1s;
+      }
   
   
   
@@ -324,4 +345,25 @@
           margin-left: 0;
         }
     }
-    
+    /* Footer Menu */
+#nav-footer {
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  #nav-footer {
+      text-align: left;
+      -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+      order: -1;
+  }
+}
+
+#nav-footer li {
+  display: inline-block;
+  margin-left: 1em;
+}
+
+#nav-footer li:first-child {
+  margin-left: 0;
+}

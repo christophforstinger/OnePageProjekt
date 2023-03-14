@@ -374,6 +374,24 @@ add_action ( 'acf/init', function (){
                 'render_template' => 'template-parts/block-services.php'
         ) );
 
+                /* register block "Services" */ 
+                acf_register_block_type(array(
+                    'name' => 'webdev_Über_uns',
+                    'title' =>  __('Über uns', 'wifi'),
+                    'description' => __('Services 2-3 Spalten', 'wifi'),
+                    'supports' => array('anchor' => true),
+                    'category' => 'wifi',
+                    'keywords' => array('services', 'spalten', 'columns', 'teaser', 'Leistungen'),
+                    'post_types' => array('page'),
+                    'align' => false,
+                    'mode' => false,
+                    'icon' => 'yes',
+                    'render_template' => 'template-parts/block-Über_uns.php'
+
+
+                    ) );
+
+
                     // Register Block "Project-Carousel"
             acf_register_block_type(array(
                 'name' => 'webdev_project', // Interner Name
@@ -407,6 +425,32 @@ add_action ( 'acf/init', function (){
 }
 
 } );
+
+
+// Registrieren Sie den ACF-Block
+add_action( 'acf/init', 'my_acf_block_init' );
+function my_acf_block_init() {
+    // Überprüfen Sie, ob die Funktion "acf_register_block_type" verfügbar ist
+    if ( function_exists( 'acf_register_block_type' ) ) {
+        acf_register_block_type(
+            array(
+                'name'            => 'my-acf-block',
+                'title'           => __( 'Mein ACF-Block', 'my-acf-block' ),
+                'description'     => __( 'Ein benutzerdefinierter ACF-Block.', 'my-acf-block' ),
+                'render_callback' => 'my_acf_block_render_callback',
+                'category'        => 'formatting',
+                'icon'            => 'admin-comments',
+                'keywords'        => array( 'acf', 'block' ),
+            )
+        );
+    }
+}
+
+
+
+
+
+
 
 
 

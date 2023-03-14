@@ -1,11 +1,9 @@
-<?php /*
-  * index Template == default for all (für uns Beitragsseite -> Einstellung lesen)
-  * https://developer.wordpress.org/themes/basics/template-hierarchy/
- */
+<?php
+ 
 ?>
-<?php get_header(); // WordPress Funktion zum Einbinden der header.php ?>
+<?php get_header(); ?>
 	<section class="slider">
-		<input type="radio" name="slider" id="slide1" checked>
+		<input type="radio" name="slider" id="slide1">
 		<input type="radio" name="slider" id="slide2">
 		<input type="radio" name="slider" id="slide3">
 		<div class="slides">
@@ -49,4 +47,4 @@
 
 
 
-<?php get_footer(); // WordPress Funktion zum Einbinden der footer.php ?>
+<?php get_footer();  ?>
