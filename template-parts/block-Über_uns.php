@@ -17,7 +17,7 @@ if (!empty($block['anchor'])) {
 /* Erstellen des Klassen-Attributs
  * „$block['className']“ liefert die "zusätzlichen CSS Klassen" aus den erweiterten Block-Einstellungen im Editor
  */
-$class_name = 'services';
+$class_name = 'ueber_uns';
 if (!empty($block['className'])) {
     $class_name .= ' ' . esc_attr($block['className']);
 }
