@@ -7,11 +7,8 @@
  ?>
 <html lang="de">
 <head>
-    <?php /* die WordPress Funktion "bloginfo()" gibt nütliche Informationen zur Website zurück. Über den Parameter 'show' können einzelne Werte ausgegeben werden.
-        * bloginfo('charset') gibt den Zeichensatz der eingestellten Sprache zurück (ZB: UTF-8 )
-        * https://developer.wordpress.org/reference/functions/bloginfo/
-        * Hinweis: wird dieses Theme nur für Sprachen in UTF-8 entwickelt, könnte dieser Hardcoded eingefügt werden (also ohne Funktionsaufruf)
-        */
+    <?php 
+
     ?>
     <meta charset="<?php bloginfo('charset'); ?>>">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,9 +22,8 @@
     <?php wp_head();
     ?>
 </head>
-<?php /* body_class() liefert viele nützliche Klassen-Namen aus WordPress. ZB: logged-in, admin-bar, template, post-id, etc.
-     * https://developer.wordpress.org/reference/functions/body_class/
-     */ ?>
+<?php 
+ ?>
 <body <?php body_class(); ?>>
 <body>
 	<header>
@@ -41,7 +37,6 @@
 
 
 		  <ul>
-			<li><a href="#home">Home</a></li>
 			<li><a href="#about">Über uns</a></li>
 			<li><a href="#services">Unsere Leistungen</a></li>
 			<li><a href="#portfolio">Portfolio</a></li>
