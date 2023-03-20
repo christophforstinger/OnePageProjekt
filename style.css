@@ -1,3 +1,19 @@
+/*
+Theme Name: OnePageProjekt
+Author: TheFoo
+Description: Ein Einfacher One_pager geignet für Kleinunernehmer die einen einfachen Onlineauftritt wollen und nicht viel Funktionen benötigen.
+Requires at least: 5.9
+Tested up to: 6.1
+Requires PHP: 5.6
+Version: 1.0
+
+Tags: one-column, custom-colors, custom-menu,  editor-style, featured-images, full-site-editing,
+
+OnePageProjekt WordPress Theme, (C) 2023 TheFoo
+
+*/
+
+
 
 /* Globale Styles */
 * {
@@ -52,77 +68,7 @@
   }
   
   
-  .slider {
-    position: relative;
-    width: 100%;
-    height: 500px;
-    overflow: hidden;
-  }
-  
-  .slider input[type=radio] {
-    display: none;
-  }
-  
-  .slider .slides {
-    display: flex;
-    height: 100%;
-    width: 300%;
-    transition: transform 0.5s ease-in-out;
-  }
-  
-  .slider .slider-image {
-    width: 33.33%;
-    height: 100%;
-    background-size: cover;
-    background-position: center;
-    float: left;
-    border-radius: 15px;
-  }
-  
-  #slide1-img {
-    background-image: url(images/Schwarz\ und\ Weiß\ Linien\ Architektur\ Logo\ \(1\).jpg);
-  }
-  
-  #slide2-img {
-    background-image: url(images/post.png);
-  }
-  
-  #slide3-img {
-    background-image: url(images/webdesign.png);
-  }
-  
-  .slider input[type=radio]:checked + .slider .slides {
-    transform: translateX(-33.33%);
-  }
-  
-  .slider .slider-navigation {
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    justify-content: center;
-  }
-  
-  .slider .slider-navigation label {
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: #ccc;
-    margin-right: 10px;
-    cursor: pointer;
-    transition: background-color 0.2s ease;
-  }
-  
-  .slider .slider-navigation label:hover {
-    background-color: #999;
-  }
-  
-  .slider input[type=radio]:checked + .slider .slider-navigation label {
-    background-color: #333;
-  }
-  
+ 
   section {
       background-color: #777474;
       padding: 50px;
@@ -214,7 +160,17 @@
         transition: 1s;
       }
   
+/*Kontaktformular Button*/
 
+      div.wpforms-container-full .wpforms-form button[type=submit], div.wpforms-container-full .wpforms-form .wpforms-page-button {
+        background-color: #eee;
+        border: 2px solid #222;
+        color: #222;
+        font-size: 1em;
+        padding: 10px 15px;
+        border-radius: 10px;
+        background-color: #f00;
+    }
 
   
   /* Mobile styles */

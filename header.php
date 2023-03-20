@@ -33,13 +33,30 @@
 	
     </div>
 
-	<nav>
+	<a href="#content" class="screen-reader-text"><?php _e('Skip to Content', 'ize'); ?></a>
+<nav id="navbar">
+    <div class="container">
+        <div id="brand">
+            <?php 
+            if (function_exists('the_custom_logo')) {
+                the_custom_logo();
+            } ?>
+        </div>
 
 
-		  <ul>
-			<li><a href="#about">Über uns</a></li>
-			<li><a href="#services">Unsere Leistungen</a></li>
-			<li><a href="#portfolio">Portfolio</a></li>
-			<li><a href="#contact">Kontakt</a></li>
-		</ul>
-	</nav>
+      
+        <label for="nav-toggle" id="nav-button">
+            <span class="nav-button-icon" aria-hidden="true"></span>
+            <span class="screen-reader-text"><?php _e('Navigation öffnen/schließen', 'wifi'); ?></span>
+        </label>
+        <?php 
+        wp_nav_menu(array(
+            'theme_location' => 'primary', 
+            'container' => false,           
+            'menu_class' => 'nav-menu',     
+            'menu_id' => 'nav-main',        
+            'depth' => 2,                   
+            'fallback_cb' => false         
+        )); ?>
+    </div>
+</nav>

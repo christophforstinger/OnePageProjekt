@@ -2,21 +2,6 @@
  
 ?>
 <?php get_header(); ?>
-	<section class="slider">
-		<input type="radio" name="slider" id="slide1">
-		<input type="radio" name="slider" id="slide2">
-		<input type="radio" name="slider" id="slide3">
-		<div class="slides">
-		  <div class="slider-image" id="slide1-img"></div>
-		  <div class="slider-image" id="slide2-img"></div>
-		  <div class="slider-image" id="slide3-img"></div>
-		</div>
-		<div class="slider-navigation">
-		  <label for="slide1"></label>
-		  <label for="slide2"></label>
-		  <label for="slide3"></label>
-		</div>
-	  </section>
 	
 	
 	<section id="home">
