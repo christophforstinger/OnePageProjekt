@@ -340,11 +340,11 @@ add_filter( 'block_categories_all', function($categories){
 /* ACF-Gutenberg-Blöcke erstellen : */ 
 
 add_action ( 'acf/init', function (){
-
+/*
 
     if ( function_exists('acf_register_block_type')  ) {
         
-        /* register block "Header" */ 
+       
         acf_register_block_type(array(
                 'name' => 'webdev_header',
                 'title' =>  __('Header', 'wifi'),
@@ -358,8 +358,7 @@ add_action ( 'acf/init', function (){
                 'icon' => 'welcome-widget-menus',
                 'render_template' => 'template-parts/block-header.php'
         ) );
-
-                /* register block "Services" */ 
+              
         acf_register_block_type(array(
                 'name' => 'webdev_services',
                 'title' =>  __('Services', 'wifi'),
@@ -374,7 +373,7 @@ add_action ( 'acf/init', function (){
                 'render_template' => 'template-parts/block-services.php'
         ) );
 
-                /* register block "Services" */ 
+                
                 acf_register_block_type(array(
                     'name' => 'webdev_Über_uns',
                     'title' =>  __('Über uns', 'wifi'),
@@ -423,7 +422,7 @@ add_action ( 'acf/init', function (){
 
 
 }
-
+*/
 } );
 
 
